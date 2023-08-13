@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const config = require("config");
-const db = config.get("mongoURI");
+const db = "mmongodb+srv://cise3:cise3@cluster0.z8wsvnn.mongodb.net/";
 
 const connectDB = async () => {
   try {
