@@ -1,0 +1,4 @@
+{
+  "mongoURI":
+    "mongodb+srv://cise3:cise3@cluster0.z8wsvnn.mongodb.net/test?retryWrites=true&w=majority"
+}
