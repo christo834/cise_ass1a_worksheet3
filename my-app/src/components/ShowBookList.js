@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8082/api/books")
+      .get("https://cise-ass1a-worksheet3-jtak.vercel.app/api/books")
       .then((res) => {
         setBooks(res.data);
       })
