@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`https://cise-ass1a-worksheet3-wpye.vercel.app/api/books/${id}`)
+      .get(`http://localhost:8082/api/books/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,10 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(
-        `https://cise-ass1a-worksheet3-wpye.vercel.app/api/books/${id}`,
-        data
-      )
+      .put(`http://localhost:8082/api/books/${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })
